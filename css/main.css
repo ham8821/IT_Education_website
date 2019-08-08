@@ -1,0 +1,288 @@
+/*--------------------------------------
+
+INTERNET PROGRAMMING - FIRST ASSIGNMENT
+TEAM MEMBERS: EMMA, CARLO AND DIEGO
+GRADUATE DIPLOMA IN  IT - LEVEL 7
+ASPIRE 2 INTERNATIONAL 
+
+WEB SITE MAIN CSS FILE 
+web-site/css/main.css
+
+---------------------------------------*/
+
+body {
+  background: url(/images/backgroundwhite.jpg);
+  font-family: 'Francois One', sans-serif;
+}
+
+.body-page2 {
+
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  background-blend-mode: lighten;
+}
+
+.header {
+
+  background: #F6F6F6;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+footer {
+  font-size: 16px;
+  padding-bottom: 5px;
+  text-align: center;
+  background: #F6F6F6;
+  display: block;
+  margin-top: 15px;
+}
+
+br {
+  margin-bottom: 3px;
+}
+
+h2,
+#courses-title {
+  text-align: center;
+}
+
+@media (min-width:576px) {
+  h2 {
+    font-size: 35px;
+
+  }
+}
+
+@media (min-width:768px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width:992px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+#video-banner {
+
+  display: block;
+  margin: auto;
+  margin-top: 76px;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+#banner {
+
+  max-height: 400px;
+  display: block;
+  margin-top: 76px;
+}
+
+
+
+.input-align {
+  display: block;
+  margin: auto;
+  width: 267px;
+  border-radius: 5px;
+}
+
+.label-align {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#apply-now {
+  padding-top: 85px;
+
+}
+
+#apply-now-text {
+
+  text-align: center;
+  font-size: 40px;
+}
+
+.first-text {
+
+  font-size: 50px;
+  text-align: center;
+}
+
+.second-text {
+  font-size: 40px;
+  text-align: center;
+}
+
+#second-text-1stline {
+  font-size: 34px;
+}
+
+
+#second-text-2ndline {
+  font-size: 22px;
+}
+
+button {
+
+  align-content: center;
+  padding: 10px;
+  width: 120px;
+  max-height: 40px;
+  text-align: center;
+  text-size-adjust: 100%;
+}
+
+.menu-buttons {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background: #F6F6F6;
+
+}
+
+
+#cards-buttons {
+  padding-top: 5px;
+}
+
+#button1,
+#button2,
+#button3,
+#button4,
+#menu1,
+#menu2,
+#menu3,
+#menu4 {
+
+  background: #F6F6F6;
+  border: 0px;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100px;
+  outline: 0;
+}
+
+
+.img-fluid {
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+#contact-us {
+
+  padding-top: 95px;
+}
+
+#contact-us-text {
+  text-align: center;
+}
+
+#js {
+  text-decoration: none;
+  color: #ffba08;
+}
+
+#CSS {
+  text-decoration: none;
+  color: #1539bf;
+}
+
+#HTML {
+  text-decoration: none;
+  color: #d00000;
+}
+
+#card-buttons,
+#terms {
+  outline: 0;
+}
+
+#js:hover,
+#CSS:hover,
+#HTML:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=100);
+}
+
+.courses-images:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=100);
+}
+
+#courses-title {
+  text-align: center;
+}
+
+.course-title {
+  text-align: center;
+  font-size: 28px;
+  text-shadow: 3px 0px 5px rgba(136, 142, 144, 0.69);
+}
+
+.course-text {
+  text-align: justify;
+}
+
+.course-price {
+
+  text-align: center;
+  font-size: 26px;
+}
+
+#submit,
+#reset,
+#reset2,
+#submit2 {
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#courses {
+
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+#more-courses {
+
+  padding-top: 90px;
+  padding-bottom: 85px
+}
+
+
+#submit:hover,
+#submit2:hover,
+#reset:hover,
+#reset2:hover {
+  background-color: lightslategray;
+  color: white;
+}
+
+
+input:required,
+textarea:required {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+#failure,
+#success {
+  color: #6EA070;
+  display: none;
+}

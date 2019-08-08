@@ -1,0 +1,201 @@
+<!-------------------------------------------
+
+INTERNET PROGRAMMING - FIRST ASSIGNMENT
+TEAM MEMBERS: EMMA, CARLO AND DIEGO
+GRADUATE DIPLOMA IN  IT - LEVEL 7
+ASPIRE 2 INTERNATIONAL 
+
+WEB SITE LANDING PAGE 
+web-site/index.html
+
+-------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IT-pro / Landing page</title>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---CSS file and Bootstrap--->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font and icons -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="container" id="home-index">
+
+        <!-- Header fixed to the top-->
+        <div class="header fixed-top">
+            <div class="col-12">
+                <p><i class="fab fa-product-hunt"></i> IT-pro</p>
+            </div>
+        </div>
+
+        <!-- Navigation bar using jQuery-- fixed to the top -->
+        <div class="row">
+            <div class="col-12 fixed-top menu-buttons" id="menu-landing">
+                <i class="fas fa-laptop-code"></i>
+                <button id="menu1">Home</button>
+                <button id="menu2">Courses</button>
+                <button id="menu3">Contact us</button>
+                <button id="menu4">Second page</button>
+            </div>
+        </div>
+
+        <!-- Banner video -->
+
+        <div class="row">
+            <div class="col-12">
+                <!-- <img class="img-fluid" src="images/banner_d.jpg" alt="" id="video-banner"> -->
+                <video id="video-banner" autoplay loop muted>
+                    <source src="images/mh_home_video_short.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+
+        <!-- First text -->
+
+        <div class="row second-text">
+            <div class="col-12">
+                <p>The better way to become an IT professional</p>
+                <p id="second-text-1stline"><i class="fab fa-html5"></i>HTML <i class="fab fa-css3-alt"></i>CSS <i
+                        class="fab fa-js"></i>
+                    JavaScript</p>
+                <p id="second-text-2ndline">First
+                    start with basic HTML, then move to CSS to learn how to make you web-site look niecer. Finally, add
+                    JS for actions!
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Courses -->
+
+        <div class="row" id="courses">
+            <div class="col-12">
+                <h2 id="courses-title"><i class="fas fa-book-open"></i> Courses</h2>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-ms-4 col-sm-12 col-12">
+                <div class="col-12" id="container-course-1">
+                    <img src="images/htmlbegin.jpg" alt="HTML" class="img-fluid courses-images">
+                </div>
+                <div class="col-12">
+                    <p class="course-text"><a id="HTML" href="https://www.w3schools.com/html/" alt="HTML">HTML</a> is
+                        the foundation of all web pages. Without HTML, you is the foundation of all web pages. Without
+                        HTML, you wouldn't be able
+                        to organize text or add images or videos to your web pages.</br>
+                        HTML is the beginning of everything you need to know to create engaging web pages!
+                        You will learn all the common HTML tags used to structure HTML pages, the
+                        skeleton of all websites.</br> You will also be able to create HTML tables to present tabular
+                        data efficiently.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-ms-4 col-sm-12 col-12">
+                <div class="col-12" id="container-course-2">
+                    <img src="images/cssbegin.jpg" alt="HTML" class="img-fluid courses-images">
+                </div>
+                <div class="col-12">
+                    <p class="course-text">Without <a id="CSS" href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            alt="CSS">CSS</a>, every web page would be drab plain text and images that flowed
+                        straight down the page. </br> With CSS, you can add color and background images and change the
+                        layout
+                        of your page — your web pages can feel like works of art!</br>
+                        You'll be able to set up the correct file structure, edit text and colors, and create
+                        attractive layouts. With these skills, you'll be able to customize the appearance of your web
+                        pages to suit your every need!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-ms-4 col-sm-12 col-12">
+                <div class="col-12" id="container-course-3">
+                    <img src="images/jsbegin.jpg" alt="HTML" class="img-fluid courses-images">
+                </div>
+                <div class="col-12">
+                    <p class="course-text"><a id="js" href="https://www.javascript.com/" alt="JavaScript">JavaScript</a>
+                        is the programming language of the web. You can use it to add
+                        dynamic behavior, store information, and handle requests and responses on a website. </br> This
+                        course sequence covers data types and structures, functions, and object-oriented programming
+                        with classical inheritance in ES6 syntax.</br>
+                        Each program is designed to upgrade your skills through a rigorous curriculum with personalized
+                        support. Level up today!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact-us -->
+
+        <div class="row formbackground" id="contact-us">
+            <div class="col-12" id="form">
+                <h2 id="contact-us-text">Give us a chance!</br>Contact us now</h2>
+            </div>
+            <div class="col-12">
+                <form onsubmit="return messageIndex()">
+                    <p id="failure">Opss.. something went wrong.</p>
+                    <p id="success">Thank you, yorequired="required"ur message was sent successfully.</p>
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="label-align" for="FirstName">First Name<span class="required">*</span></label>
+                            <input class="input-align" type="text" id="fname" name="fname" value="" placeholder="Your first name"
+                                 />
+                        </div>
+
+                        <div class="col-12">
+                            <label class="label-align" for="LasttName">Last Name<span class="required">*</span></label>
+                            <input class="input-align" type="text" id="lname" name="lname" value="" placeholder="Your last name"
+                                required="required" />
+                        </div>
+
+                        <div class="col-12">
+                            <label class="label-align" for="email">Email Address<span class="required">*</span></label>
+                            <input class="input-align" type="email" id="email" name="email" value="" placeholder="your@email.com"
+                                required="required" />
+                        </div>
+
+                        <div class="col-12">
+                            <label class="label-align" for="contactnumber">Contact Number</label>
+                            <input class="input-align" type="tel" id="number" name="contactnumber" value="" placeholder="Example: 022 103 1985" />
+                        </div>
+                        <div class="col-12">
+                            <label class="label-align" for="subject">Subject</label>
+                            <select class="input-align" id="subject" name="subject">
+                                <option value="one">Select one</option>
+                                <option value="two">HTML</option>
+                                <option value="three">CSS</option>
+                                <option value="four">JavaScript</option>
+                            </select>
+                        </div>
+                        <!-- Comments area -->
+                        <div class="col-12">
+                            <label class="label-align" for="message"><span class="required">Message:*</span></label>
+                            <textarea class="input-align" id="message" name="message" placeholder="Write your message here, please."
+                                required="required"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" value="Submit" onclick="messageIndex()" id="submit">
+                            <input type="reset" value="Reset" id="reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js\jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+<footer>
+    <p>2019. Created by: Emma, Roman and Diego. GradDip IT Level 7, Aspire2 International.</p>
+</footer>
+
+</html>

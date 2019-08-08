@@ -1,0 +1,194 @@
+<!-------------------------------------------
+
+INTERNET PROGRAMMING - FIRST ASSIGNMENT
+TEAM MEMBERS: EMMA, CARLO AND DIEGO
+GRADUATE DIPLOMA IN  IT - LEVEL 7
+ASPIRE 2 INTERNATIONAL 
+
+WEB SITE SECOND PAGE 
+web-site/page2.html
+
+-------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IT-pro / More courses</title>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="strict-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---CSS file and Bootstrap--->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Font and icons -->
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+
+<body class="body-page2">
+
+  <div class="container" id="home-page2">
+
+    <!-- Header fixed to the top-->
+    <div class="header fixed-top">
+      <div class="col-12">
+        <p><i class="fab fa-product-hunt"></i> IT-pro</p>
+      </div>
+    </div>
+
+    <!-- Navigation bar using jQuery-- fixed to the top -->
+
+    <div class="row">
+      <div class="col-12 fixed-top menu-buttons" id="menu-page2">
+        <i class="fas fa-laptop-code"></i>
+        <button id="button1">Home</button>
+        <button id="button2">More courses</button>
+        <button id="button3">Apply now</button>
+        <button id="button4">Landing page</button>
+      </div>
+    </div>
+
+    <!-- Image banner -->
+
+    <div class="row">
+      <div class="col-12">
+        <img class="img-fluid" src="images/banner.jpg" alt="banner" id="banner">
+      </div>
+    </div>
+
+    <!-- First text -->
+
+    <div class="row first-text">
+      <div class="col-12">
+        <p><i class="fas fa-graduation-cap"></i> Keep on learning</p>
+        <p class="second-text">4 more courses from different subjects
+        </p>
+      </div>
+    </div>
+
+    <!-- Other courses -->
+
+    <div class="row" id="more-courses">
+      <div class="col-12">
+        <h2><i class="fas fa-book-open"></i> Courses</h2>
+      </div>
+      <div class="col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-12">
+        <div class="col-12">
+          <img src="images/one.jpg" alt="HTML" class="img-fluid courses-images">
+        </div>
+        <div class="col-12">
+          <p class="course-title">ENGLISH<p>
+        </div>
+        <div class="col-12">
+          <p class="course-text">We teach English for work and everyday life in New Zealand.
+            We help new Kiwis learn the English they need to be ready for the job market and daily stuff.</h5>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-12">
+        <div class="col-12">
+          <img src="images/two.jpg" alt="HTML" class="img-fluid courses-images">
+        </div>
+        <div class="col-12">
+          <p class="course-title">PROFESSIONAL BUSINESS</p>
+          <div class="col-12">
+            <p class="course-text">Grow your leadership skills. Learn how to empower your team to achieve goals.
+              Innovative local training and professional coaches.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-12">
+        <div class="col-12">
+          <img src="images/three.PNG" alt="HTML" class="img-fluid courses-images">
+        </div>
+        <div class="col-12">
+          <p class="course-title">ENGINEERING</p>
+        </div>
+        <div class="col-12">
+          <p class="course-text">As New Zealand's professional body for engineers,
+            we're committed to growing your credibility, recognition and influence.
+            Let's do amazing things together.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-12">
+        <div class="col-12">
+          <img src="images/four.jpg" alt="HTML" class="img-fluid courses-images">
+        </div>
+        <div class="col-12">
+          <p class="course-title">MARKETING<p>
+        </div>
+        <div class="col-12">
+          <p class="course-text">Master branding, SEO, PPC, Social media & More - Start Today!
+            Expert-Led courses. Learn in-demand Skills. Access anytime, anywhere.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+
+    <div class="row" id="apply-now">
+      <div class="col-12" id="form">
+        <p id="apply-now-text"><i class="fas fa-file-code"></i> Apply Now</p>
+      </div>
+      <div class="col-12">
+        <form onsubmit="return messagePage2()" onreset="return reset()">
+          <div class="row">
+            <div class="col-12">
+              <label class="label-align" for="FirstName">First Name<span class="required">*</span></label>
+              <input class="input-align" type="text" id="fname2" name="fname2" value="" placeholder="First name"
+                required="required" />
+            </div>
+            <div class="col-12">
+              <label class="label-align" for="LasttName">Last Name<span class="required">*</span></label>
+              <input class="input-align" type="text" id="lname2" name="lname2" value="" placeholder="Last name"
+                required="required" />
+            </div>
+            <div class="col-12">
+              <label class="label-align" for="address">Address<span class="required">*</span></label>
+              <input class="input-align" type="address" id="address" name="address" value="" placeholder="Street, City"
+                required="required" />
+            </div>
+            <div class="col-12">
+              <label class="label-align" for="email">e-mail<span class="required">*</span></label>
+              <input class="input-align" type="email" id="email2" name="email2" value="" placeholder="your@email.com"
+                required="required" />
+            </div>
+            <div class="col-12">
+              <label class="label-align" for="email">Card Number (12 digits)<span class="required">*</span></label>
+              <input class="input-align" type="text" id="CC" size="35" name="CC" value="" placeholder="Example: 0123 4567 8910"
+                required="required" />
+            </div>
+            <div class="col-12" id="cards-buttons">
+              <input class="input-align" type="radio" id="MC" name="CC" value="Visa" checked>
+              <center>Visa</center>
+              <input class="input-align" type="radio" id="Visa" name="CC" value="Amex">
+              <center>Amex</center>
+              <input class="input-align" type="radio" id="Amex" name="CC" value="Mastercard">
+              <center>Mastercard</center>
+            </div>
+            <div class="col-12">
+              <input class="input-align" type="checkbox" id="terms" name="terms">
+              <center>I have red the terms and conditions</center>
+            </div>
+            <div class="col-12">
+              <input type="submit" value="Submit" onclick="messagePage2()" id="submit2">
+              <input type="reset" value="Reset" id="reset2">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js\jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/popper.min.js"></script>
+</body>
+<footer>
+  <p>2019. Created by: Emma, Roman and Diego. GradDip IT Level 7, Aspire2 International.</p>
+</footer>
+
+</html>
